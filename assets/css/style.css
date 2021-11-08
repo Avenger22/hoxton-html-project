@@ -152,7 +152,7 @@ header.header .header-group-2 .ul-header-2 li button:hover{
 
 main.main {
     grid-area: main;
-    outline: 0.5px solid #111111;
+    /* outline: 0.5px solid #111111; */
     display: grid;
     place-items: center;
 }
@@ -164,21 +164,22 @@ main.main .main-post {
 }
 
 main.main .main-post h1 {
-    font-size: 65px;
+    font-size: 55px;
     letter-spacing: normal;
-    font-weight: 900;
+    font-weight: 800;
     font-family: sans-serif;
     color: #fff;
     text-transform: capitalize;
 }
 
 main.main .main-post h2 {
-    font-size: 75px;
+    font-size: 55px;
     letter-spacing: normal;
-    font-weight: 900;
+    font-weight: 800;
     font-family: sans-serif;
     color: #ffa800;
     text-transform: capitalize;
+    padding-bottom: 20px;
 }
 
 main.main .main-post p {
@@ -188,7 +189,7 @@ main.main .main-post p {
     font-family: sans-serif;
     color: #fff;
     text-transform: capitalize;
-    padding-bottom: 25px;
+    padding-bottom: 5px;
 }
 
 main.main .main-post button {
@@ -295,17 +296,17 @@ section.container-2 .box-image {
 
 section.container-2 .box-header {
     grid-area: box-header;
-    outline: 1px solid #111111;
+    /* outline: 1px solid #111111; */
 }
 
 section.container-2 .box-button {
     grid-area: box-button;
-    outline: 1px solid #111111;
+    /* outline: 1px solid #111111; */
 }
 
 section.container-2 .box-form {
     grid-area: box-form;
-    outline: 1px solid #111111;
+    /* outline: 1px solid #111111; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -694,6 +695,8 @@ footer.container-9 .footer-group-1 h5 {
     font-size: 28px;
     font-weight: 700;
     color: #e52b50;
+    display: grid;
+    place-items: center;
 }
 
 footer.container-9 .footer-group-1 .footer-form span { 
@@ -747,16 +750,100 @@ footer.container-9 .footer-group-1 .footer-form {
 
 footer.container-9 .footer-group-2 {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.9fr;
     grid-gap: 10px;
-    place-items: center;
+    align-content: start;
+    justify-content: center;
     outline: 0.5px solid #b1b8c2;
 }
 
+footer.container-9 .footer-group-2 .blogs-mini {
+    display: grid;
+    grid-template-rows: 150px 150px 150px;
+    grid-gap: 10px;
+    align-content: center;
+    justify-content: center;
+}
+
+footer.container-9 .footer-group-2 .blogs-mini .blogs-mini-post span {
+    color: #2b72e4;
+    cursor: pointer;
+}
+
+footer.container-9 .footer-group-2 .blogs-mini .blogs-mini-post {
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    grid-gap: 10px;
+    align-content: start;
+    justify-content: center;
+}
+
+footer.container-9 .footer-group-2 .blogs-mini img {
+    height: 100px;
+    width: 150px;
+    border-radius: 20px; 
+}
+
+footer.container-9 .footer-group-2 .blogs-mini span{
+    font-size: 12px;
+    color: #fff;
+    font-style: italic;
+}
+
+footer.container-9 .footer-group-2 h5  {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: normal;
+    color: #e52b50;
+    display: grid;
+    place-items: center;
+    padding-top: 60px;
+}
+
+
+
 footer.container-9 .footer-group-3 {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 50px 470px 50px;
     grid-gap: 10px;
-    place-items: center;
+    /* place-items: center; */
+    align-content: start;
     outline: 0.5px solid #b1b8c2;
+    justify-content: center;
+    place-items: center;
+}
+
+footer.container-9 .footer-group-3  h5 {
+    font-size: 28px;
+    font-weight: 700;
+    padding-top: 100px;
+    color: #e52b50;
+}
+
+footer.container-9 .footer-group-3  a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #e52b50;
+}
+
+
+
+footer.container-9 .footer-group-3 .row-wrapper {
+    display: grid;
+    grid-template-rows: repeat(3, 110px);
+    grid-gap: 20px;
+    place-items: center;
+}
+
+footer.container-9 .footer-group-3 .row-wrapper .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+footer.container-9 .footer-group-3 .row-wrapper img {
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    border: 3px solid #ffa500;
 }
