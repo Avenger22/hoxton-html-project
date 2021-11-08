@@ -51,7 +51,7 @@ section.container-1 {
     display: grid;
     grid-template: 
     "header" 60px
-    "main" 0.9fr /
+    "main" 1fr /
     1fr;
 }
 
@@ -140,6 +140,10 @@ header.header .header-group-2 .ul-header-2 li button{
     font-size: 15px;
     font-weight: 700;
     border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 header.header .header-group-2 .ul-header-2 li button:hover{
@@ -164,7 +168,7 @@ main.main .main-post {
 }
 
 main.main .main-post h1 {
-    font-size: 55px;
+    font-size: 65px;
     letter-spacing: normal;
     font-weight: 800;
     font-family: sans-serif;
@@ -173,13 +177,13 @@ main.main .main-post h1 {
 }
 
 main.main .main-post h2 {
-    font-size: 55px;
+    font-size: 65px;
     letter-spacing: normal;
     font-weight: 800;
     font-family: sans-serif;
     color: #ffa800;
     text-transform: capitalize;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 main.main .main-post p {
@@ -378,7 +382,7 @@ section.container-3 .box-2 .text-box-1 button {
 
 
 section.container-4 {
-    height: 110vh;
+    height: 120vh;
     width: 100%;
     display: grid;
     grid-template-rows: 0.1fr 0.9fr;
@@ -412,6 +416,7 @@ section.container-4 .text-box-2 {
     display: grid;
     place-items: center;
     grid-gap: 10px;
+    padding-top: 30px;
 }
 
 section.container-4 .text-box-2 h4 {
@@ -423,7 +428,7 @@ section.container-4 .text-box-2 h4 {
 }
 
 section.container-4 .text-box-2 p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: normal;
     font-family: sans-serif;
@@ -439,7 +444,8 @@ section.container-4 .card p {
     font-size: 12px;
     font-weight: 500;
     font-family: sans-serif;
-    width: 55ch;
+    width: 50ch;
+    padding: 0px 10px;
 }
 
 
@@ -448,7 +454,7 @@ section.container-4 .card button {
     font-weight: 600;
     letter-spacing: normal;
     font-family: sans-serif;
-    padding: 10px 10px;
+    padding: 10px 20px;
     color: #f2f2f2;
     background-color: #ffa500;
     border: none;
@@ -506,7 +512,7 @@ section.container-5 .header-wrapper button {
 
 
 section.container-6 {
-    height: 110vh;
+    height: 115vh;
     width: 100%;
     display: grid;
     grid-template-rows: 0.1fr 0.9fr;
@@ -540,6 +546,7 @@ section.container-6 .text-box-3 {
     display: grid;
     place-items: center;
     grid-gap: 10px;
+    padding-top: 30px;
 }
 
 section.container-6 .text-box-3 h4 {
@@ -567,7 +574,8 @@ section.container-6 .card-2 p {
     font-size: 12px;
     font-weight: 500;
     font-family: sans-serif;
-    width: 55ch;
+    width: 50ch;
+    padding: 0px 10px;
 }
 
 
