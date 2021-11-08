@@ -140,10 +140,6 @@ header.header .header-group-2 .ul-header-2 li button{
     font-size: 15px;
     font-weight: 700;
     border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
 }
 
 header.header .header-group-2 .ul-header-2 li button:hover{
@@ -173,7 +169,7 @@ main.main .main-post h1 {
     font-weight: 900;
     font-family: sans-serif;
     color: #fff;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 main.main .main-post h2 {
@@ -182,7 +178,7 @@ main.main .main-post h2 {
     font-weight: 900;
     font-family: sans-serif;
     color: #ffa800;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 main.main .main-post p {
@@ -191,7 +187,7 @@ main.main .main-post p {
     font-weight: 700;
     font-family: sans-serif;
     color: #fff;
-    text-transform: uppercase;
+    text-transform: capitalize;
     padding-bottom: 25px;
 }
 
@@ -202,7 +198,7 @@ main.main .main-post button {
     background-color: #ffa500;
     color: #fff;
     font-size: 20px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 700;
     letter-spacing: normal;
 }
@@ -595,3 +591,65 @@ section.container-6 .card-2 a {
     color:  #ece5e1;
     transition: 1s;
   }
+
+section.container-7 {
+    height: 40vh;
+    width: 100%;
+    background-color: #e52b50;
+    display: grid;
+    place-items: center;
+  }
+
+section.container-7 .newsletter-wrapper {
+      display: grid;
+      outline: 0.5px solid #a9bad1;
+      grid-template-rows: 1fr 1fr;
+      place-items: center;
+      grid-gap: 40px;
+  }
+
+section.container-7 .newsletter-search {
+    display: grid;
+    outline: 0.5px solid #a9bad1;
+    grid-template-columns: 0.8fr 0.2fr;
+}
+
+section.container-7 .newsletter-wrapper input {
+    padding: 15px 30px;
+    width: 550px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #a9bad1;
+    background-color: #fff;
+    border: none;
+}
+
+section.container-7 .newsletter-wrapper button {
+    padding: 15px 50px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: sans-serif;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    grid-gap: 5px;
+    cursor: pointer;
+}
+
+section.container-7 .newsletter-wrapper button:hover {
+    background-color: #f5cf04;
+    color: #fff;
+    transition: 1s;
+}
+
+section.container-7 .newsletter-header h4 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: normal;
+    font-family: sans-serif;
+    color: #000;
+    border-bottom: 3px solid #679ce6;
+    padding-bottom: 5px;
+    /* border-bottom-width: ; */
+}
