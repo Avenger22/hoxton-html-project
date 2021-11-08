@@ -210,6 +210,8 @@ main.main .main-post button:hover {
     cursor: pointer;
 }
 
+
+
 section.container-2 {
     background-color: #f2f2f2;
     height: 100vh;
@@ -226,8 +228,8 @@ section.container-2 .box {
     "box-image box-button" 0.3fr / 
     0.3fr 0.7fr;
     background-color: #fff; 
-    height: 80vh;
-    width: 80%;
+    height: 90vh;
+    width: 90%;
     /* outline: 1px solid #111111; */
 }
 
@@ -306,4 +308,63 @@ section.container-2 .box-form {
     grid-template-rows: 1fr 1fr;
     grid-gap: 10px;
     place-items: center;
+}
+
+
+section.container-3 {
+    background-color: #f2f2f2;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+section.container-3 .box-2 {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    height: 90vh;
+    width: 90%;
+    background-color: #fff;
+    align-items: center;
+}
+
+section.container-3 .text-box-1 {
+    display: grid;
+    grid-template-rows: 0.2fr 0.4fr 0.3fr 0.1fr;
+    grid-gap: 30px;
+    padding-left: 30px;
+}
+
+section.container-3 .image-box-1 img {
+    height: 90vh;
+    width: 100%;
+}
+
+section.container-3 .box-2 .text-box-1 p {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: normal;
+    font-family: sans-serif;
+    width: 55ch;
+}
+
+section.container-3 .box-2 .text-box-1 h3 {
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: normal;
+    font-family: sans-serif;
+    color: #ffa800;
+}
+
+section.container-3 .box-2 .text-box-1 button {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: normal;
+    font-family: sans-serif;
+    padding: 15px 15px;
+    color: #f2f2f2;
+    background-color: #ffa500;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
 }
