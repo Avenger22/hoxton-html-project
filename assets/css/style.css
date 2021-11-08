@@ -521,8 +521,8 @@ section.container-6 {
 
 section.container-6 .cards-2 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
     place-items: center;
 }
 
@@ -538,9 +538,10 @@ section.container-6 .cards-2 .card-2 {
     -moz-box-shadow: -1px 5px 6px 14px rgba(0,0,0,0.23);
 }
 
-/* section.container-4 .cards .card img{
-    
-} */
+section.container-6 .cards-2 .card-2 img{
+    height: 250px;
+    width: 200px;
+}
 
 section.container-6 .text-box-3 {
     display: grid;
@@ -574,8 +575,8 @@ section.container-6 .card-2 p {
     font-size: 12px;
     font-weight: 500;
     font-family: sans-serif;
-    width: 50ch;
-    padding: 0px 10px;
+    width: 40ch;
+    padding: 0px 5px;
 }
 
 
@@ -855,3 +856,77 @@ footer.container-9 .footer-group-3 .row-wrapper img {
     border-radius: 20px;
     border: 3px solid #ffa500;
 }
+
+
+
+section.container-8 {
+    height: 105vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.2fr 0.8fr;
+    grid-gap: 20px;
+    align-content: start;
+    place-content: center;
+}
+
+section.container-8 .blog-header {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-gap: 10px;
+    place-items: center;
+    padding-top: 30px;
+}
+
+section.container-8 .blog-wrapper {
+    display: grid;
+    grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
+    grid-gap: 20px;
+    place-items: center;
+    place-content: center;
+}
+
+section.container-8 .blog-wrapper .blog-article {
+    display: grid;
+    grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr;
+    grid-gap: 5px;
+}
+
+section.container-8 .blog-article h5 {
+    font-size: 18px;
+    font-weight: 900;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+section.container-8 .blog-article p {
+    font-size: 12px;
+    font-weight: 600;
+    font-family: sans-serif;
+    width: 40ch;
+    font-style: italic;
+}
+
+section.container-8 .blog-article span {
+    font-size: 11px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: #e52b50;
+}
+
+
+
+section.container-8 .blog-header h4 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: normal;
+    color: #e52b50;
+    border-bottom: 3px solid #e52b50;
+}
+
+section.container-8 .blog-header span {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: normal;
+    color: #060208;
+}
+
