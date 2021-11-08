@@ -1,0 +1,41 @@
+/*DEFAULT VALUES  had a problem with header not quite responsive and the right header magically moved like 100 px from right to left and caused problems but with AUTO in grid fixed it also add AUTO to 900 px media query especially the last button*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition: 1s;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar:hover {
+    width: 10px;
+    background-color: #b1b8c2;
+    transition: 1s;
+}
+
+::-webkit-scrollbar-button:hover {
+    width: 10px;  
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    overflow-x: hidden; /* removes scroll in bottom */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    transition: 1s;
+    color: #111111;
+}
