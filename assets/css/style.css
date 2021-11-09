@@ -74,7 +74,10 @@ header.header {
     text-transform: uppercase;
     font-weight: 700;
     font-style: italic;
-    font-size: 16px;
+    font-size: 14px;
+    display: grid;
+    place-self: center;
+
 }
 
 #special-logo a {
@@ -104,24 +107,28 @@ header.header .header-group-2 {
 
 header.header .header-group-1 .ul-header-1 {
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 160px 80px 80px 80px 80px 80px 80px;
     grid-gap: 10px;
 }
 
 header.header .header-group-1 .ul-header-1 li {
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     font-family: sans-serif;
     font-weight: 600;
     letter-spacing: normal;
+    display: grid;
+    place-self: center;
 }
 
 header.header .header-group-2 .ul-header-2 li {
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     font-family: sans-serif;
     font-weight: 600;
     letter-spacing: normal;
+    display: grid;
+    place-self: center;
 }
 
 header.header .header-group-2 .ul-header-2 li a:hover {
@@ -1082,6 +1089,12 @@ section.container-10 .offer button:hover {
         grid-gap: 40px;
     }
     
+    header.header .header-group-1 .ul-header-1 {
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        grid-gap: 10px;
+    }
+
     section.container-6 .cards-2 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
