@@ -472,7 +472,7 @@ footer.container-9 .footer-group-3 .row-wrapper img {
 
   /*Here the content for contact page */
 section.container-2 {
-      height: 120vh;
+      height: 140vh;
       width: 100%;
       display: grid;
       place-items: center;
@@ -590,4 +590,95 @@ section.container-3 .contact-group-2 .form-group-1 span {
     font-size: 18px;
     font-weight: 600;
     letter-spacing: normal;
+}
+
+
+@media screen and (max-width: 1200px) {
+    
+    header.header .header-group-1 .ul-header-1 {
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        grid-gap: 10px;
+    }
+
+    footer.container-9 {
+        height: 200vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #212529;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    
+    section.container-1 header.header .header-group-1 li {
+        font-size: 14px;
+    }
+
+    section.container-1 header.header .header-group-2 li {
+        font-size: 14px;
+    }
+
+    section.container-1 main .main-post h1{
+        font-size: 46px;
+    }
+
+    section.container-1 main .main-post h2{
+        font-size: 36px;
+    }
+
+    section.container-1 main .main-post p{
+        font-size: 15px;
+    }
+
+    footer.container-9 {
+        height: 300vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #212529;
+    }
+  
+    section.container-3 .contact-group-2 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+        align-content: start;
+        align-items: start;
+        justify-content: center;
+        justify-items: center;
+        padding-top: 50px;
+    }
+
+    section.container-3 .contact-group-2 .form-group-1 span {
+        width: 30ch;
+    }
+
+    section.container-3 {
+        height: 150vh;
+    }
+
+    section.container-3 .contact-group-2 .form-group-2 {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.5fr 0.1fr;
+        grid-gap: 20px;
+        align-content: start;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    section.container-1 header.header .header-group-1 li {
+        font-size: 12px;
+    }
+
+    section.container-1 header.header .header-group-2 li {
+        font-size: 12px;
+    }
 }
