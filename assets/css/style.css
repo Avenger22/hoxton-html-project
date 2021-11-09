@@ -633,10 +633,9 @@ section.container-6 .card-2 a {
     -webkit-animation: scaling 2s infinite linear alternate;
 }
 
-.back-to-top img {
+/* .back-to-top img {
     /* height: 20px; */
-}
-
+ 
   .back-to-top:hover {
     background-color: #f5cf04;
     color:  #ece5e1;
