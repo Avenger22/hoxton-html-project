@@ -468,3 +468,126 @@ footer.container-9 .footer-group-3 .row-wrapper img {
     color:  #ece5e1;
     transition: 1s;
   }
+
+
+  /*Here the content for contact page */
+section.container-2 {
+      height: 120vh;
+      width: 100%;
+      display: grid;
+      place-items: center;
+      grid-gap: 30px;
+      grid-template-rows: 0.1fr 0.9fr;
+  }
+
+section.container-2 .map-contact {
+    display: grid;
+    place-items: center;
+    width: 70%;
+}
+
+section.container-2 .location {
+    display: grid;
+    place-items: center;
+}
+
+section.container-2 .location h2 {
+    font-size: 40px;
+    font-weight: 700;
+    /* font-style: italic; */
+    color: #060208;
+    padding-top: 40px;
+}
+
+
+
+section.container-3 {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.1fr 0.9fr;
+    grid-gap: 10px;
+    background-color: #dfe5ee;
+}
+
+section.container-3 .contact-group-1 {
+    display: grid;
+    place-content: center;
+}
+
+section.container-3 .contact-group-1 h2 {
+    font-size: 40px;
+    color: #e52b50;
+    font-weight: 700;
+    letter-spacing: normal;
+    padding-top: 30px;
+    border-bottom: 3px solid #e52b50;
+}
+
+section.container-3 .contact-group-2 {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-gap: 15px;
+}
+
+section.container-3 .contact-group-2 .form-group-1 {
+    display: grid;
+    place-content: center;
+    grid-template-rows: repeat(4, 0.2fr);
+    grid-gap: 10px;
+}
+
+section.container-3 .contact-group-2 .form-group-2 {
+    display: grid;
+    place-content: center;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.5fr 0.1fr;
+    grid-gap: 10px;
+}
+
+section.container-3 .contact-group-2 .form-group-2 input {
+    padding: 15px 10px;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+}
+
+section.container-3 .contact-group-2 .form-group-2 button {
+    padding: 15px 10px;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    background-color: #e52b50;
+    border-radius: 20px;
+    width: 50%;
+    display: grid;
+    place-self: center;
+}
+
+section.container-3 .contact-group-2 .form-group-2 button:hover {
+    background-color: #ffa500;
+    color: #fff;
+    transition: 1s;
+}
+
+section.container-3 .contact-group-2 .form-group-2 textarea {
+    resize: none;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    padding-left: 10px;
+}
+
+section.container-3 .contact-group-2 .form-group-1 h3 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: normal;
+    color: #00AAFF;
+}
+
+section.container-3 .contact-group-2 .form-group-1 span {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: normal;
+}
