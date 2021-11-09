@@ -361,7 +361,7 @@ section.container-3 .text-box-1 {
     display: grid;
     grid-template-rows: 0.2fr 0.4fr 0.3fr 0.1fr;
     grid-gap: 30px;
-    padding-left: 30px;
+    padding-left: 5px;
 }
 
 section.container-3 .image-box-1 img {
@@ -726,7 +726,7 @@ footer.container-9 .footer-group-1 {
     grid-gap: 20px;
     /* place-items: center; */
     outline: 0.5px solid #b1b8c2;
-    padding-left: 30px;
+    padding-left: 20px;
     align-items: center;
     padding-top: 30px;
 }
@@ -791,9 +791,6 @@ footer.container-9 .footer-group-1 .footer-form {
     display: grid;
     grid-template-columns: 0.9fr 0.1fr;
 }
-
-
-
 
 footer.container-9 .footer-group-2 {
     display: grid;
@@ -1402,7 +1399,6 @@ section.container-10 .offer button:hover {
         -moz-box-shadow: -1px 5px 6px 14px rgba(0,0,0,0.23);
     }
     
-
     section.container-4 .cards .card img {
         height: 200px;
         width: 80%;
@@ -1421,10 +1417,6 @@ section.container-10 .offer button:hover {
         width: 70px;
     }
 
-    /* footer.container-9 .footer-group-2 .blogs-mini-post img {
-        
-    } */
-
     section.container-1 header.header .header-group-1 li {
         font-size: 12px;
     }
@@ -1436,9 +1428,120 @@ section.container-10 .offer button:hover {
 
 @media screen and (max-width: 400px) {
     header.header {
-        width: 100%;
+        width: auto;
+        display: grid;
+        grid-template: 
+        "header-group-1" 1fr /
+        1fr;
+        place-items: center;
+        place-content: center;
     }
 
+    header.header .header-group-1 {
+        display: grid;
+        grid-template-columns: 0.3fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.2fr;
+        width: auto;
+        place-items: center;
+        place-content: center;
+    }
 
+    main.main .main-post h1 {
+        display: grid;
+        place-self: center;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    main.main .main-post h2 {
+        display: grid;
+        place-self: center;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    main.main .main-post p {
+        display: grid;
+        place-self: center;
+        font-size: 18px;
+    }
+
+    main.main .main-post button {
+        display: grid;
+        place-self: center;
+        font-size: 14px;
+    }
+ 
+    header.header .header-group-2 {
+        display: none;
+    }
+
+    header.header .void {
+        display: none;
+    }
+    
+    section.container-1 header.header .header-group-1 li {
+        font-size: 10px;
+    }
+
+    section.container-1 header.header .header-group-2 li {
+        font-size: 10px;
+    }
+
+    section.container-7 .newsletter-search input {
+        width: 150px;
+    }
+
+    footer.container-9 .footer-group-1 p {
+        width: 40ch;
+        font-size: 12px;
+        display: grid;
+        place-self: center;
+    }
+
+    footer.container-9 .footer-group-1 .footer-form input {
+        width: 220px;
+    }
+
+    footer.container-9 .footer-group-1 .footer-form button {
+        padding: 0 10px;
+    }
+
+    section.container-3 .image-box-1 img {
+        height: 100vh;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    section.container-4 .text-box-2 p {
+        font-size: 15px;
+    }
+
+    section.container-6 .image-box-3 p {
+        font-size: 15px;
+    }
+
+    section.container-10 .companies-header h3 {
+        display: grid;
+        place-self: center;
+        font-size: 24px;
+    }
+
+    section.container-10 .companies .company span {
+        display: grid;
+        place-self: center;
+        font-size: 14px;
+    }
+
+    section.container-10 .companies .company span.company-span{
+        display: grid;
+        place-self: center;
+        font-size: 13px;
+    }
+
+    section.container-10 .offer h4 {
+        display: grid;
+        place-self: center;
+        font-size: 16px;
+    }
 
 }
