@@ -33,42 +33,6 @@
     transition: 1s;
   }
 
-/*this is the code *---------------------------------*/
-header.header .header-group-1 li.services-dropdown {
-    position: relative;
-}
-  
-header.header .header-group-1 li.services-dropdown nav {
-    position: absolute;
-    top: 150%;
-    right: 10px;
-    width: 200px;
-    background-color: rgb(219, 191, 191);
-    box-shadow: 0 0 10px 2px #b6acac40;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-    padding: 30px 50px;
-}
-
-header.header .header-group-1 li.services-dropdown nav h2 {
-    padding-bottom: 20px;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-  
-header.header .header-group-1 li.services-dropdown:hover nav {
-    visibility: visible;
-    opacity: 1;
-}
-  
-header.header .header-group-1 li.services-dropdown nav a {
-   border: none;
-   text-decoration: none;
-   padding-bottom: 5px;
-}
-
-
 /* ::-webkit-scrollbar {
     width: 15px;
     color: #ffa500;
@@ -107,14 +71,14 @@ section.container-1 {
     grid-template: 
     "header" 70px
     "ribbon-blog" 50px
-    "main" 1fr /
+    "main" 0.9fr /
     1fr;
 }
 
 main.main {
     grid-area: main;
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 0.9fr 0.1fr;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -123,8 +87,14 @@ main.main {
 
 main.main .main-post {
     display: grid;
-    grid-template-rows: 0.5fr 0.5fr;
-    grid-gap: 30px;
+    grid-template-rows: 0.4fr 0.6fr;
+    grid-gap: 60px;
+}
+
+main.main .main-post .image-box {
+    display: grid;
+    place-content: center;
+    place-items: center;
 }
 
 main.main .main-post .text {
@@ -140,6 +110,27 @@ main.main .main-post .text p {
     font-weight: normal;
     letter-spacing: normal;
     line-height: 28px;
+}
+
+main.main .main-bottom-ribbon {
+    display: grid;
+    grid-template-columns: 80px 100px 200px;
+    grid-gap: 5px;
+    align-content: center;
+    align-items: center;
+    justify-content: start;
+    justify-items: start;
+    border-bottom: 1px solid #2b72e4;
+    padding: 10px 0;
+    border-top: 1px solid #2b72e4;
+    background-color: #f6f6f6;
+}
+
+
+main.main .main-bottom-ribbon a {
+    font-size: 14px;
+    color: #2b72e4;
+    font-weight: normal;
 }
 
 header.header {
@@ -255,11 +246,10 @@ header.header .header-group-2 .ul-header-2 li button:hover{
 }
 
 section.container-1 .ribbon-blog {
-    outline: 0.5px solid #060208;
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
     grid-gap: 30px;
-    background-color: #cacaca;
+    background-color: #f6f6f6;
     width: auto;
     grid-area: ribbon-blog;
 }
@@ -273,7 +263,7 @@ section.container-1 .ribbon-blog .ribbon-1 {
 
 section.container-1 .ribbon-blog .ribbon-2 {
     display: grid;
-    grid-template-columns: 40px 10px 200px;
+    grid-template-columns: 40px 10px 250px;
     grid-gap: 5px;
     justify-content: end;
     align-content: center;
@@ -284,7 +274,61 @@ section.container-1 .ribbon-blog a {
     color: #060208;
 }
 
+/* HERE STARTS THE CONTAINER-2 SECTION */
+section.container-2 {
+    height: 50vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-gap: 30px;
+}
 
+section.container-2 .share-wrapper {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    background-color: #57abff;
+    width: 75%;
+    margin-left: 12.5%;
+    align-items: center;
+    align-content: center;
+    height: 80px;
+}
+
+section.container-2 .share-header {
+    display: grid;
+    justify-items: start;
+    justify-content: start;
+    padding-left: 30px;
+}
+
+section.container-2 .share-header h4 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #f6f6f6;
+}
+
+
+section.container-2 .share-wrapper .share-icons {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    justify-items: end;
+    justify-content: end;
+    padding-right: 30px;
+}
+
+section.container-2 .share-wrapper .share-icons i {
+    font-size: 32px;
+    color: #f6f6f6;
+}
+
+section.container-2 .share-wrapper .share-icons i:hover {
+    color: #e52b50;
+    transition: 1s;
+}
+
+
+
+/* HERE STARTS THE FOOTER SECTION */
 footer.container-9 {
     height: 100vh;
     width: 100%;
