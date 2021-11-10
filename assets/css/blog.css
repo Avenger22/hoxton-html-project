@@ -106,7 +106,7 @@ header.header .header-group-2 {
 
 header.header .header-group-1 .ul-header-1 {
     display: grid;
-    grid-template-columns: 160px 80px 80px 80px 80px 80px 80px;
+    grid-template-columns: 160px 160px 160px 160px;
     grid-gap: 10px;
 }
 
@@ -707,35 +707,6 @@ footer.container-9 .footer-group-3 .row-wrapper img {
         background-color: #212529;
     }
   
-    section.container-3 .contact-group-2 {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 50px;
-        align-content: start;
-        align-items: start;
-        justify-content: center;
-        justify-items: center;
-        padding-top: 50px;
-    }
-
-    section.container-3 .contact-group-2 .form-group-1 span {
-        width: 30ch;
-    }
-
-    section.container-3 {
-        height: 150vh;
-    }
-
-    section.container-3 .contact-group-2 .form-group-2 {
-        display: grid;
-        justify-content: center;
-        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.5fr 0.1fr;
-        grid-gap: 20px;
-        align-content: start;
-        justify-content: center;
-    }
-
     section.container-2 .blog-wrapper .row .blog-post p {
         width: 40ch;
     }
@@ -838,7 +809,7 @@ footer.container-9 .footer-group-3 .row-wrapper img {
 
     header.header .header-group-1 {
         display: grid;
-        grid-template-columns: 0.3fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.2fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         width: auto;
         place-items: center;
         place-content: center;

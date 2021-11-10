@@ -10,6 +10,42 @@
     transition: 1s;
 }
 
+/*this is the code *---------------------------------*/
+header.header .header-group-1 li.services-dropdown {
+    position: relative;
+}
+  
+header.header .header-group-1 li.services-dropdown nav {
+    position: absolute;
+    top: 150%;
+    right: 10px;
+    width: 200px;
+    background-color: rgb(219, 191, 191);
+    box-shadow: 0 0 10px 2px #b6acac40;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    padding: 30px 50px;
+}
+
+header.header .header-group-1 li.services-dropdown nav h2 {
+    padding-bottom: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+  
+header.header .header-group-1 li.services-dropdown:hover nav {
+    visibility: visible;
+    opacity: 1;
+}
+  
+header.header .header-group-1 li.services-dropdown nav a {
+   border: none;
+   text-decoration: none;
+   padding-bottom: 5px;
+}
+
+
 /* ::-webkit-scrollbar {
     width: 15px;
     color: #ffa500;
