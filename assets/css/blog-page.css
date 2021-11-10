@@ -101,7 +101,7 @@ a {
 
 /*Here layouts start */
 section.container-1 {
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: grid;
     grid-template: 
@@ -113,6 +113,36 @@ section.container-1 {
 
 main.main {
     grid-area: main;
+    display: grid;
+    grid-template-rows: 1fr;
+    /* place-items: center; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+main.main .main-post {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-gap: 30px;
+    /* place-items: center;
+    place-content: center; */
+}
+
+main.main .main-post .text {
+    display: grid;
+    grid-template-rows: repeat(10, 0.1fr);
+    grid-gap: 30px;
+}
+
+
+main.main .main-post .text p {
+    width: 100ch;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 28px;
 }
 
 header.header {
