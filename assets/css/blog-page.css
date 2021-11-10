@@ -115,7 +115,6 @@ main.main {
     grid-area: main;
     display: grid;
     grid-template-rows: 1fr;
-    /* place-items: center; */
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -126,8 +125,6 @@ main.main .main-post {
     display: grid;
     grid-template-rows: 0.5fr 0.5fr;
     grid-gap: 30px;
-    /* place-items: center;
-    place-content: center; */
 }
 
 main.main .main-post .text {
