@@ -135,7 +135,6 @@ main.main .main-bottom-ribbon a {
 
 header.header {
     grid-area: header;
-    outline: 0.5px solid #fff;
     display: grid;
     grid-template: 
     "header-group-1 void header-group-2" 1fr /
@@ -168,7 +167,6 @@ header.header {
 
 header.header .header-group-1 {
     grid-area: header-group-1;
-    outline: 0.5px solid #b1b8c2;
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
@@ -177,7 +175,6 @@ header.header .header-group-1 {
 
 header.header .header-group-2 {
     grid-area: header-group-2;
-    outline: 0.5px solid #b1b8c2;
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
@@ -276,11 +273,11 @@ section.container-1 .ribbon-blog a {
 
 /* HERE STARTS THE CONTAINER-2 SECTION */
 section.container-2 {
-    height: 50vh;
+    height: auto;
     width: 100%;
     display: grid;
     grid-template-rows: 0.5fr 0.5fr;
-    grid-gap: 30px;
+    grid-gap: 100px;
 }
 
 section.container-2 .share-wrapper {
@@ -326,6 +323,43 @@ section.container-2 .share-wrapper .share-icons i:hover {
     transition: 1s;
 }
 
+section.container-2 .photo-menu-wrapper {
+    display: grid;
+    grid-template-rows: 0.3fr 0.7fr;
+    grid-gap: 40px;
+    place-content: center;
+}
+
+section.container-2 .photo-header {
+    display: grid;
+    /* place-content: center; */
+    border-bottom: 3px solid #ffa500;
+    padding-bottom: 10px;
+}
+
+section.container-2 .photo-header h5 {
+    display: grid;
+    place-self: start;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: normal;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section.container-2 .photo-menu-wrapper .photo-items {
+    display: grid;
+    grid-template-columns: 330px 330px 330px;
+    grid-gap: 10px;
+    place-items: center;
+    place-content: center;
+}
+
+section.container-2 .photo-menu-wrapper .photo-items img {
+    cursor: pointer;
+}
+
+
+
 
 
 /* HERE STARTS THE FOOTER SECTION */
@@ -342,7 +376,6 @@ footer.container-9 .footer-group-1 {
     grid-template-rows: 60px 150px 50px 60px;
     grid-gap: 20px;
     /* place-items: center; */
-    outline: 0.5px solid #b1b8c2;
     padding-left: 20px;
     align-items: center;
     padding-top: 30px;
@@ -415,7 +448,6 @@ footer.container-9 .footer-group-2 {
     grid-gap: 10px;
     align-content: start;
     justify-content: center;
-    outline: 0.5px solid #b1b8c2;
 }
 
 footer.container-9 .footer-group-2 .blogs-mini {
@@ -489,7 +521,6 @@ footer.container-9 .footer-group-3 {
     grid-gap: 10px;
     /* place-items: center; */
     align-content: start;
-    outline: 0.5px solid #b1b8c2;
     justify-content: center;
     place-items: center;
 }
