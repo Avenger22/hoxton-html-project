@@ -103,6 +103,12 @@ main.main .main-post .text {
     grid-gap: 30px;
 }
 
+main.main .main-post .text h3 {
+    font-size: 22px;
+    font-weight: 800;
+    font-family: monospace;
+    line-height: 36px;
+}
 
 main.main .main-post .text p {
     width: 100ch;
@@ -265,6 +271,12 @@ section.container-1 .ribbon-blog .ribbon-2 {
     justify-content: end;
     align-content: center;
     padding-right: 30px;
+}
+
+section.container-1 .ribbon-blog .ribbon-1 h3 {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: monospace;
 }
 
 section.container-1 .ribbon-blog a {

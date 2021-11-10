@@ -93,7 +93,7 @@ section.container-1 {
 
 header.header {
     grid-area: header;
-    outline: 0.5px solid #fff;
+    /* outline: 0.5px solid #fff; */
     display: grid;
     grid-template: 
     "header-group-1 void header-group-2" 1fr /
@@ -126,7 +126,7 @@ header.header {
 
 header.header .header-group-1 {
     grid-area: header-group-1;
-    outline: 0.5px solid #b1b8c2;
+    /* outline: 0.5px solid #b1b8c2; */
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
@@ -135,7 +135,7 @@ header.header .header-group-1 {
 
 header.header .header-group-2 {
     grid-area: header-group-2;
-    outline: 0.5px solid #b1b8c2;
+    /* outline: 0.5px solid #b1b8c2; */
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
@@ -691,7 +691,7 @@ section.container-7 {
 
 section.container-7 .newsletter-wrapper {
       display: grid;
-      outline: 0.5px solid #a9bad1;
+      /* outline: 0.5px solid #a9bad1; */
       grid-template-rows: 1fr 1fr;
       place-items: center;
       grid-gap: 40px;
@@ -699,7 +699,7 @@ section.container-7 .newsletter-wrapper {
 
 section.container-7 .newsletter-search {
     display: grid;
-    outline: 0.5px solid #a9bad1;
+    /* outline: 0.5px solid #a9bad1; */
     grid-template-columns: 0.8fr 0.2fr;
 }
 
@@ -760,7 +760,7 @@ footer.container-9 .footer-group-1 {
     grid-template-rows: 60px 150px 50px 60px;
     grid-gap: 20px;
     /* place-items: center; */
-    outline: 0.5px solid #b1b8c2;
+    /* outline: 0.5px solid #b1b8c2; */
     padding-left: 20px;
     align-items: center;
     padding-top: 30px;
@@ -833,7 +833,7 @@ footer.container-9 .footer-group-2 {
     grid-gap: 10px;
     align-content: start;
     justify-content: center;
-    outline: 0.5px solid #b1b8c2;
+    /* outline: 0.5px solid #b1b8c2; */
 }
 
 footer.container-9 .footer-group-2 .blogs-mini {
@@ -907,7 +907,7 @@ footer.container-9 .footer-group-3 {
     grid-gap: 10px;
     /* place-items: center; */
     align-content: start;
-    outline: 0.5px solid #b1b8c2;
+    /* outline: 0.5px solid #b1b8c2; */
     justify-content: center;
     place-items: center;
 }
