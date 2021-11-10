@@ -682,3 +682,55 @@ section.container-3 .contact-group-2 .form-group-1 span {
         font-size: 12px;
     }
 }
+
+header.header {
+    width: auto;
+    display: grid;
+    grid-template: 
+    "header-group-1" 1fr /
+    1fr;
+    place-items: center;
+    place-content: center;
+}
+
+header.header .header-group-1 {
+    display: grid;
+    grid-template-columns: 0.3fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.2fr;
+    width: auto;
+    place-items: center;
+    place-content: center;
+}
+
+main.main .main-post h1 {
+    display: grid;
+    place-self: center;
+    font-size: 22px;
+    text-align: center;
+}
+
+main.main .main-post h2 {
+    display: grid;
+    place-self: center;
+    font-size: 22px;
+    text-align: center;
+}
+
+main.main .main-post p {
+    display: grid;
+    place-self: center;
+    font-size: 18px;
+}
+
+main.main .main-post button {
+    display: grid;
+    place-self: center;
+    font-size: 14px;
+}
+
+header.header .header-group-2 {
+    display: none;
+}
+
+header.header .void {
+    display: none;
+}
