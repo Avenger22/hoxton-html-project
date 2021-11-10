@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition: 1s;
+}
+
+/*this is the code *---------------------------------*/
+header.header .header-group-1 li.services-dropdown {
+    position: relative;
+}
+  
+header.header .header-group-1 li.services-dropdown nav {
+    position: absolute;
+    top: 150%;
+    right: 10px;
+    width: 200px;
+    background-color: rgb(219, 191, 191);
+    box-shadow: 0 0 10px 2px #b6acac40;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    padding: 30px 50px;
+}
+
+header.header .header-group-1 li.services-dropdown nav h2 {
+    padding-bottom: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+  
+header.header .header-group-1 li.services-dropdown:hover nav {
+    visibility: visible;
+    opacity: 1;
+}
+  
+header.header .header-group-1 li.services-dropdown nav a {
+   border: none;
+   text-decoration: none;
+   padding-bottom: 5px;
+}
+
+
+/* ::-webkit-scrollbar {
+    width: 15px;
+    color: #ffa500;
+} */
+
+/* ::-webkit-scrollbar:hover {
+    width: 10px;
+    background-color: #b1b8c2;
+    transition: 1s;
+}
+
+::-webkit-scrollbar-button:hover {
+    width: 10px;  
+} */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    overflow-x: hidden; /* removes scroll in bottom */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    transition: 1s;
+    color: #fff;
+}
+
+/*Here layouts start */
+section.container-1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/main/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template: 
+    "header" 70px
+    "main" 1fr /
+    1fr;
+}
+
+header.header {
+    grid-area: header;
+    outline: 0.5px solid #fff;
+    display: grid;
+    grid-template: 
+    "header-group-1 void header-group-2" 1fr /
+    0.6fr 0.1fr 0.3fr;
+    background-color: #ffa500;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    height: 70px;
+}
+
+#special-logo {
+    color: #060208;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 14px;
+    display: grid;
+    place-self: center;
+
+}
+
+#special-logo a {
+    color: #060208;
+}
+
+.void {
+    grid-area: void;
+}
+
+header.header .header-group-1 {
+    grid-area: header-group-1;
+    outline: 0.5px solid #b1b8c2;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    place-content: center;
+}
+
+header.header .header-group-2 {
+    grid-area: header-group-2;
+    outline: 0.5px solid #b1b8c2;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+header.header .header-group-1 .ul-header-1 {
+    display: grid;
+    grid-template-columns: 160px 80px 80px 80px 80px 80px 80px;
+    grid-gap: 10px;
+}
+
+header.header .header-group-1 .ul-header-1 li {
+    color: #fff;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: normal;
+    display: grid;
+    place-self: center;
+}
+
+header.header .header-group-2 .ul-header-2 li {
+    color: #fff;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: normal;
+    display: grid;
+    place-self: center;
+}
+
+header.header .header-group-2 .ul-header-2 li a:hover {
+    color: #a9bad1;
+    transition: 1s;
+    border-bottom: 1px solid #679ce6;
+}
+
+header.header .header-group-1 .ul-header-1 li a:hover {
+    color: #a9bad1;
+    transition: 1s;
+    border-bottom: 1px solid #679ce6;
+}
+
+header.header .header-group-2 .ul-header-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    place-items: center;
+}
+
+header.header .header-group-2 .ul-header-2 li button{
+    border: 2px solid #fff;
+    padding: 10px 10px;
+    background-color: #a9bad1;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+header.header .header-group-2 .ul-header-2 li button:hover{
+    background-color: #111111;
+    color: #ffa800;
+    transition: 1s;
+}
+
+
+
+main.main {
+    grid-area: main;
+    /* outline: 0.5px solid #111111; */
+    display: grid;
+    place-items: center;
+}
+
+main.main .main-post {
+    display: grid;
+    place-items: center;
+    grid-gap: 5px;
+}
+
+main.main .main-post h1 {
+    font-size: 65px;
+    letter-spacing: normal;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+main.main .main-post h2 {
+    font-size: 65px;
+    letter-spacing: normal;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: #ffa800;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+main.main .main-post p {
+    font-size: 18px;
+    letter-spacing: normal;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+}
+
+main.main .main-post button {
+    padding: 15px 15px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #ffa500;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: normal;
+}
+
+main.main .main-post button:hover {
+    background-color: #cacaca;
+    color: #111111;
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    
+    header.header .header-group-1 .ul-header-1 {
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        grid-gap: 10px;
+    }
+
+    footer.container-9 {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        background-color: #212529;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+   
+    section.container-1 header.header .header-group-1 li {
+        font-size: 14px;
+    }
+
+    section.container-1 header.header .header-group-2 li {
+        font-size: 14px;
+    }
+
+    section.container-1 main .main-post h1{
+        font-size: 42px;
+    }
+
+    section.container-1 main .main-post h2{
+        font-size: 32px;
+    }
+
+    section.container-1 main .main-post p{
+        font-size: 15px;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+   
+    footer.container-9 {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #212529;
+    }
+
+    footer.container-9 .footer-group-3 .row-wrapper img {
+        height: 70px;
+        width: 70px;
+    }
+
+    section.container-1 header.header .header-group-1 li {
+        font-size: 12px;
+    }
+
+    section.container-1 header.header .header-group-2 li {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header.header {
+        width: auto;
+        display: grid;
+        grid-template: 
+        "header-group-1" 1fr /
+        1fr;
+        place-items: center;
+        place-content: center;
+    }
+
+    header.header .header-group-1 {
+        display: grid;
+        grid-template-columns: 0.3fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.2fr;
+        width: auto;
+        place-items: center;
+        place-content: center;
+    }
+
+    main.main .main-post h1 {
+        display: grid;
+        place-self: center;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    main.main .main-post h2 {
+        display: grid;
+        place-self: center;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    main.main .main-post p {
+        display: grid;
+        place-self: center;
+        font-size: 18px;
+    }
+
+    main.main .main-post button {
+        display: grid;
+        place-self: center;
+        font-size: 14px;
+    }
+ 
+    header.header .header-group-2 {
+        display: none;
+    }
+
+    header.header .void {
+        display: none;
+    }
+    
+    section.container-1 header.header .header-group-1 li {
+        font-size: 10px;
+    }
+
+    section.container-1 header.header .header-group-2 li {
+        font-size: 10px;
+    }
+
+    footer.container-9 .footer-group-1 p {
+        width: 40ch;
+        font-size: 12px;
+        display: grid;
+        place-self: center;
+    }
+
+    footer.container-9 .footer-group-1 .footer-form input {
+        width: 220px;
+    }
+
+    footer.container-9 .footer-group-1 .footer-form button {
+        padding: 0 10px;
+    }
+}
