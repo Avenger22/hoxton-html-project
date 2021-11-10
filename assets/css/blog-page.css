@@ -106,8 +106,13 @@ section.container-1 {
     display: grid;
     grid-template: 
     "header" 70px
+    "ribbon-blog" 50px
     "main" 1fr /
     1fr;
+}
+
+main.main {
+    grid-area: main;
 }
 
 header.header {
@@ -222,6 +227,35 @@ header.header .header-group-2 .ul-header-2 li button:hover{
     transition: 1s;
 }
 
+section.container-1 .ribbon-blog {
+    outline: 0.5px solid #060208;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-gap: 30px;
+    background-color: #cacaca;
+    width: auto;
+    grid-area: ribbon-blog;
+}
+
+section.container-1 .ribbon-blog .ribbon-1 {
+    display: grid;
+    justify-content: start;
+    align-content: center;
+    padding-left: 30px;
+}
+
+section.container-1 .ribbon-blog .ribbon-2 {
+    display: grid;
+    grid-template-columns: 40px 10px 200px;
+    grid-gap: 5px;
+    justify-content: end;
+    align-content: center;
+    padding-right: 30px;
+}
+
+section.container-1 .ribbon-blog a {
+    color: #060208;
+}
 
 
 footer.container-9 {
