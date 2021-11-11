@@ -892,3 +892,21 @@ footer.container-9 .footer-group-3 .row-wrapper img {
     } */
  
 }
+
+@media screen and (max-width: 370px) {
+    section.container-1 {
+        width: 108%;
+    }
+
+    section.container-2 {
+        width: 108%;
+    }
+
+    section.container-3 {
+        width: 108%;
+    }
+
+    footer.container-9 {
+        width: 108%;
+    }
+}

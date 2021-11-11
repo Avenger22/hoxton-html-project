@@ -474,12 +474,12 @@ footer.container-9 .footer-group-3 .row-wrapper img {
     background-color: #f5cf04;
     color:  #ece5e1;
     transition: 1s;
-  }
+}
 
 
   /*Here the content for contact page */
 section.container-2 {
-      height: 140vh;
+      height: auto;
       width: 100%;
       display: grid;
       place-items: center;
@@ -491,6 +491,7 @@ section.container-2 .map-contact {
     display: grid;
     place-items: center;
     width: 70%;
+    padding-bottom: 40px;
 }
 
 section.container-2 .location {
@@ -509,7 +510,7 @@ section.container-2 .location h2 {
 
 
 section.container-3 {
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: grid;
     grid-template-rows: 0.1fr 0.9fr;
@@ -523,7 +524,7 @@ section.container-3 .contact-group-1 {
 }
 
 section.container-3 .contact-group-1 h2 {
-    font-size: 40px;
+    font-size: 36px;
     color: #e52b50;
     font-weight: 700;
     letter-spacing: normal;
@@ -570,10 +571,10 @@ section.container-3 .contact-group-2 .form-group-2 button {
     width: 50%;
     display: grid;
     place-self: center;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 section.container-3 .contact-group-2 .form-group-2 button:hover {
@@ -613,7 +614,7 @@ section.container-3 .contact-group-2 .form-group-1 span {
     }
 
     footer.container-9 {
-        height: 200vh;
+        height: auto;
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -646,7 +647,7 @@ section.container-3 .contact-group-2 .form-group-1 span {
     }
 
     footer.container-9 {
-        height: 300vh;
+        height: auto;
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
@@ -670,7 +671,7 @@ section.container-3 .contact-group-2 .form-group-1 span {
     }
 
     section.container-3 {
-        height: 150vh;
+        height: auto;
     }
 
     section.container-3 .contact-group-2 .form-group-2 {
@@ -748,6 +749,7 @@ section.container-3 .contact-group-2 .form-group-1 span {
 
 }
 
+
 @media screen and (max-width: 400px) {
     footer.container-9 .footer-group-1 .footer-form input {
         width: 150px;
@@ -777,7 +779,7 @@ section.container-3 .contact-group-2 .form-group-1 span {
     header.header .header-group-1 {
         display: grid;
         grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
-        width: auto;
+        /* width: auto; */
         place-items: center;
         place-content: center;
     }
@@ -800,7 +802,8 @@ section.container-3 .contact-group-2 .form-group-1 span {
         display: grid;
         place-self: center;
         font-size: 14px;
-        width: 35ch;
+        width: 40ch;
+        padding-bottom: 30px;
     }
 
     main.main .main-post button {
@@ -826,4 +829,22 @@ section.container-3 .contact-group-2 .form-group-1 span {
         display: none;
     } */
  
+}
+
+@media screen and (max-width: 370px) {
+    section.container-1 {
+        width: 108%;
+    }
+
+    section.container-2 {
+        width: 108%;
+    }
+
+    section.container-3 {
+        width: 108%;
+    }
+
+    footer.container-9 {
+        width: 108%;
+    }
 }
