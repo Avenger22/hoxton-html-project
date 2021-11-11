@@ -218,15 +218,17 @@ main.main {
 
 main.main .main-post {
     display: grid;
+    grid-template-rows: 0.4fr 0.4fr 0.1fr 0.1fr;
     place-items: center;
-    grid-gap: 5px;
+    grid-gap: 10px;
+
 }
 
 main.main .main-post h1 {
     font-size: 65px;
     letter-spacing: normal;
     font-weight: 800;
-    font-family: sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #fff;
     text-transform: capitalize;
 }
@@ -235,24 +237,24 @@ main.main .main-post h2 {
     font-size: 65px;
     letter-spacing: normal;
     font-weight: 800;
-    font-family: sans-serif;
+    font-family:'Courier New', Courier, monospace;
     color: #ffa800;
     text-transform: capitalize;
     padding-bottom: 10px;
 }
 
 main.main .main-post p {
-    font-size: 18px;
+    font-size: 22px;
     letter-spacing: normal;
     font-weight: 700;
-    font-family: sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
     text-transform: capitalize;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 
 main.main .main-post button {
-    padding: 15px 15px;
+    padding: 15px 25px;
     border: 2px solid #fff;
     border-radius: 10px;
     background-color: #ffa500;
@@ -261,6 +263,10 @@ main.main .main-post button {
     text-transform: capitalize;
     font-weight: 700;
     letter-spacing: normal;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 main.main .main-post button:hover {
@@ -406,32 +412,45 @@ section.container-3 .image-box-1 img {
 }
 
 section.container-3 .box-2 .text-box-1 p {
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 200;
+    display: grid;
+    place-self: center;
     letter-spacing: normal;
-    font-family: sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 55ch;
+    line-height: 22px;
+    color: #35382e;
 }
 
 section.container-3 .box-2 .text-box-1 h3 {
-    font-size: 40px;
-    font-weight: 800;
+    font-size: 28px;
+    font-weight: 700;
     letter-spacing: normal;
-    font-family: sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #ffa800;
+    display: grid;
+    place-self: center;
+}
+
+section.container-3 .btn-box {
+    display: grid;
+    place-items: center;
 }
 
 section.container-3 .box-2 .text-box-1 button {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: normal;
     font-family: sans-serif;
-    padding: 15px 15px;
+    padding: 25px 35px;
     color: #f2f2f2;
     background-color: #ffa500;
     border: none;
     cursor: pointer;
     border-radius: 20px;
+    display: grid;
+    place-self: center;
 }
 
 
@@ -1063,7 +1082,7 @@ section.container-10 {
 }
 
 section.container-10 .companies-header {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
     letter-spacing: normal;
     color: #060208;
