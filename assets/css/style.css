@@ -455,15 +455,22 @@ section.container-4 .cards .card {
     grid-template-rows: 250px 30px 30px 50px;
     grid-gap: 30px;
     place-items: center;
-    background-color: #e5e9ee;
+    background-color: #e3e7eb;
     height: auto;
-    box-shadow: -1px 5px 6px 14px rgba(0,0,0,0.23);
-    -webkit-box-shadow: -1px 5px 6px 14px rgba(0,0,0,0.23);
-    -moz-box-shadow: -1px 5px 6px 14px rgba(0,0,0,0.23);
+    border-radius: 20px;
+}
+
+section.container-4 .cards .card:hover {
+    transition: 1s;
+    box-shadow: -1px 5px 6px 8px rgba(0,0,0,0.23);
+    -webkit-box-shadow: -1px 5px 6px 8px rgba(0,0,0,0.23);
+    -moz-box-shadow: -1px 5px 6px 8px rgba(0,0,0,0.23);
 }
 
 section.container-4 .cards .card img{
     height: 250px;
+    width: 100%;
+    border-radius: 20px;
 }
 
 section.container-4 .text-box-2 {
@@ -498,8 +505,10 @@ section.container-4 .card p {
     font-size: 12px;
     font-weight: 500;
     font-family: sans-serif;
-    width: 50ch;
+    width: 45ch;
     padding: 0px 10px;
+    display: grid;
+    place-self: center;
 }
 
 
@@ -600,16 +609,39 @@ section.container-6 .cards-2 .card-2 {
     grid-template-rows: 250px 30px 30px 30px;
     grid-gap: 20px;
     place-items: center;
-    background-color: #e5e9ee;
+    background-color: #e3e7eb;
     height: auto;
-    box-shadow: -1px 5px 6px 14px rgba(0,0,0,0.23);
-    -webkit-box-shadow: -1px 5px 6px 14px rgba(0,0,0,0.23);
-    -moz-box-shadow: -1px 5px 6px 14px rgba(0,0,0,0.23);
+    border-radius: 20px;
 }
 
-section.container-6 .cards-2 .card-2 img{
+section.container-6 .cards-2 .card-2:hover {
+    transition: 1s;
+    box-shadow: -1px 5px 6px 8px rgba(0,0,0,0.23);
+    -webkit-box-shadow: -1px 5px 6px 8px rgba(0,0,0,0.23);
+    -moz-box-shadow: -1px 5px 6px 8px rgba(0,0,0,0.23);
+}
+
+section.container-6 .cards-2 .card-2 img {
     height: 250px;
-    width: 200px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+section.container-6 .cards-2 .card-2 img:hover {
+    opacity: 0.5;
+    transition: 1s;
+}
+
+section.container-4 .cards .card img:hover {
+    opacity: 0.5;
+    transition: 1s;
+}
+
+section.container-6 .cards-2 .card-2 p {
+    display: grid;
+    place-self: center;
+    padding: 0 15px;
+    width: 43ch;
 }
 
 section.container-6 .text-box-3 {
@@ -1436,7 +1468,7 @@ section.container-10 .offer button:hover {
     
     section.container-4 .cards .card img {
         height: 200px;
-        width: 80%;
+        width: 100%;
     }
 
     footer.container-9 {
