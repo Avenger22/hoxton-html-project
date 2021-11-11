@@ -298,7 +298,7 @@ section.container-2 .box {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     height: 90vh;
     width: 90%;
     /*outline: 1px solid #111111;
@@ -476,7 +476,7 @@ section.container-4 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 section.container-4 .cards {
@@ -620,7 +620,7 @@ section.container-6 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 section.container-6 .cards-2 {
