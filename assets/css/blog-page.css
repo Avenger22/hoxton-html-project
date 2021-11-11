@@ -143,8 +143,8 @@ header.header {
     grid-area: header;
     display: grid;
     grid-template: 
-    "header-group-1 void header-group-2" 1fr /
-    0.6fr 0.1fr 0.3fr;
+    "header-group-1 header-group-2" 1fr /
+    0.6fr 0.4fr;
     background-color: #ffa500;
     z-index: 1;
     width: 100%;
@@ -173,22 +173,31 @@ header.header {
 
 header.header .header-group-1 {
     grid-area: header-group-1;
+    /* outline: 0.5px solid #b1b8c2; */
     display: grid;
     grid-template-columns: 1fr;
-    place-items: center;
-    place-content: center;
+    align-items: center;
+    justify-items: start;
+    align-content: center;
+    justify-content: center;
+    padding-left: 30px;
 }
 
 header.header .header-group-2 {
     grid-area: header-group-2;
+    /* outline: 0.5px solid #b1b8c2; */
     display: grid;
     grid-template-columns: 1fr;
-    place-items: center;
+    align-items: center;
+    justify-items: end;
+    align-content: center;
+    justify-content: end;
+    padding-right: 30px;
 }
 
 header.header .header-group-1 .ul-header-1 {
     display: grid;
-    grid-template-columns: 160px 160px 160px 160px;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
 }
 
