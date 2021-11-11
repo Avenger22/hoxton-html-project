@@ -663,7 +663,7 @@ footer.container-9 .footer-group-3 .row-wrapper img {
     }
 
     footer.container-9 {
-        height: 200vh;
+        height: auto;
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;

@@ -66,7 +66,7 @@ a {
 /*Here layouts start */
 section.container-1 {
     height: auto;
-    width: 100%;
+    width: auto;
     display: grid;
     grid-template: 
     "header" 70px
@@ -88,7 +88,7 @@ main.main {
 main.main .main-post {
     display: grid;
     grid-template-rows: 0.4fr 0.6fr;
-    grid-gap: 60px;
+    grid-gap: 30px;
 }
 
 main.main .main-post .image-box {
@@ -100,7 +100,7 @@ main.main .main-post .image-box {
 main.main .main-post .text {
     display: grid;
     grid-template-rows: repeat(10, 0.1fr);
-    grid-gap: 30px;
+    grid-gap: 20px;
 }
 
 main.main .main-post .text h3 {
@@ -115,7 +115,7 @@ main.main .main-post .text p {
     font-size: 18px;
     font-weight: normal;
     letter-spacing: normal;
-    line-height: 28px;
+    line-height: 24px;
 }
 
 main.main .main-bottom-ribbon {
@@ -180,7 +180,7 @@ header.header .header-group-1 {
     justify-items: start;
     align-content: center;
     justify-content: center;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 header.header .header-group-2 {
@@ -192,7 +192,7 @@ header.header .header-group-2 {
     justify-items: end;
     align-content: center;
     justify-content: end;
-    padding-right: 30px;
+    padding-right: 20px;
 }
 
 header.header .header-group-1 .ul-header-1 {
@@ -585,6 +585,13 @@ footer.container-9 .footer-group-3 .row-wrapper img {
 
 
 @media screen and (max-width: 1200px) {
+
+    main.main .main-bottom-ribbon {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+    }
     
     header.header .header-group-1 .ul-header-1 {
         display: grid;
@@ -593,20 +600,50 @@ footer.container-9 .footer-group-3 .row-wrapper img {
     }
 
     footer.container-9 {
-        height: auto;
+        height: 100%;
         width: 100%;
         display: grid;
-        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-columns: 1fr 1fr;
         background-color: #212529;
+    }
+
+    section.container-1 .ribbon-blog .ribbon-2 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 15px;
+        justify-content: center;
+        align-content: center;
+    }
+
+   section.container-1 main.main .main-post .text .paragraphs p {
+        width: 85ch;
+        font-size: 16px;
     }
 
 }
 
 
 @media screen and (max-width: 1000px) {
+
+    section.container-2 .photo-menu-wrapper {
+        display: grid;
+        grid-template-rows: 0.1fr 0.9fr;
+        grid-gap: 20px;
+    }
+
+    section.container-2 .photo-menu-wrapper .photo-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
    
     section.container-1 header.header .header-group-1 li {
         font-size: 14px;
+    }
+
+    section.container-1 main.main .main-post .text .paragraphs p {
+        width: 75ch;
+        font-size: 16px;
     }
 
     section.container-1 header.header .header-group-2 li {
@@ -624,13 +661,85 @@ footer.container-9 .footer-group-3 .row-wrapper img {
     section.container-1 main .main-post p{
         font-size: 15px;
     }
+
+    footer.container-9 {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #212529;
+    }
+
+    section.container-1 .ribbon-blog {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: auto;
+    }
+
+    section.container-1 .ribbon-blog .ribbon-2 {
+        display: none;
+    }
+
+    section.container-1 .ribbon-blog .ribbon-1 h3 {
+        display: grid;
+        place-self: center;
+        font-size: 16px;
+        padding-left: 30px;
+    }
+
+    section.container-2 .share-wrapper {
+        width: 65%;
+    }
+
   }
 
+
+@media screen and (max-width: 880px) {
+
+    section.container-1 main.main .main-post .image-box {
+        display: grid;
+        justify-content: start;
+        justify-items: start;
+    }
+
+    section.container-2 .share-wrapper {
+        width: 55%;
+    }
+
+    section.container-1 main.main .main-post .image-box img {
+        width: 95%;
+        padding-left: 15px;
+    }
+
+    section.container-1 main.main .main-post .text .paragraphs p {
+        width: 70ch;
+        font-size: 14px;
+    }
+
+}
 
 @media screen and (max-width: 768px) {
 
     section.container-1 header.header .header-group-1 li {
         font-size: 12px;
+    }
+
+    section.container-2 .share-wrapper {
+        width: 65%;
+    }
+
+    section.container-1 main.main .main-post .text .paragraphs p {
+        width: 60ch;
+        display: grid;
+        place-self: center;
+        font-size: 14px;
+    }
+
+    section.container-1 main.main .main-post .image-box img {
+        width: 80%;
+        display: grid;
+        place-self: center;
+        height: 130%;
     }
 
     section.container-1 header.header .header-group-2 li {
@@ -650,10 +759,8 @@ footer.container-9 .footer-group-3 .row-wrapper img {
 
     header.header .header-group-1 {
         display: grid;
-        grid-template-columns: repeat(4, auto);
-        width: auto;
+        grid-template-columns: repeat(4, 0.25fr);
         place-items: center;
-        place-content: center;
     }
 
     header.header .header-group-2 {
@@ -684,27 +791,115 @@ footer.container-9 .footer-group-3 .row-wrapper img {
     section.container-1 header.header .header-group-2 li {
         font-size: 12px;
     }
+
+    section.container-2 .photo-menu-wrapper .photo-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    section.container-1 main.main .main-post .image-box img {
+        width: 80%;
+        display: grid;
+        place-self: center;
+        height: 150%;
+    }
+
+    section.container-2 .share-wrapper {
+        width: 75%;
+    }
+
+    section.container-2 .share-wrapper .share-header h4 {
+        font-size: 14px;
+    }
+
+    section.container-2 .share-wrapper .share-icons i {
+        font-size: 20px;
+    }
+
+    section.container-1 main.main .main-post .image-box {
+       padding-bottom: 30px;
+    }
+
+    section.container-1 main.main .main-post .text .paragraphs p {
+        width: 55ch;
+        font-size: 14px;
+    }
+
+    section.container-1 main.main .main-post .text .paragraphs {
+        display: grid;
+        place-items: center;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    section.container-1 main.main .main-post .text .paragraphs p {
+        width: 35ch;
+        font-size: 14px;
+    }
+
+    footer.container-9 .footer-group-1 .footer-form input {
+        width: 150px;
+    }
+
+    footer.container-9 .footer-group-1 .footer-form button {
+        margin-right: 220px;
+    }
+
+    /* header.header .header-group-1 {
+        padding-right: 30px;
+    } */
+
 }
 
 @media screen and (max-width: 400px) {
+
+    section.container-1 main.main .main-post .text .paragraphs p {
+        width: 35ch;
+        font-size: 14px;
+    }
     
+    .ribbon-blog {
+        width: 100%;
+    }
+
     header.header {
-        width: auto;
+        width: 100%;
         height: 70px;
         display: grid;
         grid-template: 
         "header-group-1" 70px /
         1fr;
-        place-items: center;
-        place-content: center;
+        align-items: center;
+        justify-items: start;
     }
 
+    footer.container-9 .footer-group-1 .footer-form input {
+        width: 150px;
+    }
+
+    footer.container-9 .footer-group-1 .footer-form button {
+        margin-right: 100px;
+    }
+
+    footer.container-9 .footer-group-1 p {
+        width: 30ch;
+        padding-bottom: 50px;
+        padding-top: 30px;
+    }
+    
     header.header .header-group-1 {
         display: grid;
-        grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
-        width: auto;
-        place-items: center;
-        place-content: center;
+        grid-template-columns: auto auto auto 100px;
+        align-items: center;
+        justify-items: start;
+
     }
 
     main.main .main-post h1 {
@@ -750,14 +945,14 @@ footer.container-9 .footer-group-3 .row-wrapper img {
     }
 
     footer.container-9 .footer-group-1 p {
-        width: 40ch;
+        width: 35ch;
         font-size: 12px;
         display: grid;
         place-self: center;
     }
 
     footer.container-9 .footer-group-1 .footer-form input {
-        width: 220px;
+        width: 200px;
     }
 
     footer.container-9 .footer-group-1 .footer-form button {
@@ -767,18 +962,18 @@ footer.container-9 .footer-group-3 .row-wrapper img {
 
 @media screen and (max-width: 370px) {
     section.container-1 {
-        width: 108%;
+        width: 100%;
     }
 
     section.container-2 {
-        width: 108%;
+        width: auto;
     }
 
     section.container-3 {
-        width: 108%;
+        width: auto;
     }
 
     footer.container-9 {
-        width: 108%;
+        width: 100%;
     }
 }
