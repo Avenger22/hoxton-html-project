@@ -84,6 +84,7 @@ section.container-1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     display: grid;
     grid-template: 
     "header" 70px
@@ -292,7 +293,12 @@ section.container-2 .box {
     "box-image box-form" 0.4fr    
     "box-image box-button" 0.3fr /     
     0.3fr 0.7fr;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-image: url(../images/main/vector-JUL-2020-132.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     height: 90vh;
     width: 90%;
     /*outline: 1px solid #111111;
@@ -353,8 +359,14 @@ section.container-2 .box-image {
 .box .box-form input {
     padding: 20px 10px;
     border: none;
-    border-bottom: 3px solid #ffa500;
+    border-bottom: 10px solid #ffa500;
     width: 80%;
+    outline: none;
+}
+
+.box .box-form input:focus {
+    border: none;
+    outline: none;
 }
 
 
@@ -460,6 +472,11 @@ section.container-4 {
     display: grid;
     grid-template-rows: 0.1fr 0.9fr;
     grid-gap: 30px;
+    background-image: url(../images/main/SL_042620_30310_10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.container-4 .cards {
@@ -599,6 +616,11 @@ section.container-6 {
     display: grid;
     grid-template-rows: 0.1fr 0.9fr;
     grid-gap: 40px;
+    background-image: url(../images/main/SL_042620_30310_10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.container-6 .cards-2 {
@@ -735,7 +757,12 @@ section.container-6 .card-2 a {
 section.container-7 {
     height: 40vh;
     width: 100%;
-    background-color: #e52b50;
+    /* background-color: #e52b50; */
+    background-image: url(../images/main/abastract\ background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     display: grid;
     place-items: center;
   }
@@ -1074,7 +1101,12 @@ section.container-8 .blog-header span {
 section.container-10 {
     height: 100vh;
     width: 100%;
-    background-color: #e52b50;
+    /* background-color: #e52b50; */
+    background-image: url(../images/main/12133.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     display: grid;
     grid-template-rows: 0.2fr 0.6fr 0.2fr;
     grid-gap: 30px;
