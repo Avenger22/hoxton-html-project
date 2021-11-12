@@ -529,6 +529,10 @@ section.container-4 .cards .card img{
     height: 250px;
     width: 100%;
     border-radius: 20px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
 }
 
 section.container-4 .text-box-2 {
@@ -547,10 +551,12 @@ section.container-4 .text-box-2 h4 {
 }
 
 section.container-4 .text-box-2 p {
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 800;
     letter-spacing: normal;
     font-family: sans-serif;
+    color: #fff;
+    letter-spacing: normal;
 }
 
 section.container-4 .card h5 {
@@ -669,10 +675,10 @@ section.container-6 .cards-2 {
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
 } */
 
 section.container-6 .cards-2 .card-2 {
@@ -683,6 +689,10 @@ section.container-6 .cards-2 .card-2 {
     background-color: #e3e7eb;
     height: auto;
     border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 section.container-6 .cards-2 .card-2:hover {
@@ -694,8 +704,12 @@ section.container-6 .cards-2 .card-2:hover {
 
 section.container-6 .cards-2 .card-2 img {
     height: 250px;
-    width: 100%;
+    width: 300px;
     border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 section.container-6 .cards-2 .card-2 img:hover {
@@ -714,6 +728,7 @@ section.container-6 .cards-2 .card-2 p {
     padding: 0 15px;
     width: 43ch;
     font-family: sans-serif;
+    color: #060208;
 }
 
 section.container-6 .text-box-3 {
@@ -735,14 +750,16 @@ section.container-6 .text-box-3 p {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: normal;
-    font-family: sans-serif
+    font-family: sans-serif;
+    color: #fff;
+    letter-spacing: normal;
 }
 
 section.container-6 .card-2 h5 {
     font-size: 22px;
     font-weight: 700;
     font-family: "icofont";
-    color: #fff;
+    color: #000;
 }
 
 section.container-6 .card-2 p {
