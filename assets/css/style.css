@@ -1,6 +1,16 @@
 /*DEFAULT VALUES  had a problem with header not quite responsive and the right header magically moved like 100 px from right to left and caused problems but with AUTO in grid fixed it also add AUTO to 900 px media query especially the last button*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+@font-face {
+    src: url(../fonts/icofont.ttf);
+    font-family: 'icofont';
+}
+
+@font-face {
+    src: url(../fonts/Big\ Space.otf);
+    font-family: 'Big Space';
+}
+
 * {
     margin: 0 0;
     padding: 0 0;
@@ -114,7 +124,6 @@ header.header {
     font-size: 14px;
     display: grid;
     place-self: center;
-
 }
 
 #special-logo a {
@@ -222,23 +231,26 @@ main.main .main-post {
     grid-template-rows: 0.4fr 0.4fr 0.1fr 0.1fr;
     place-items: center;
     grid-gap: 10px;
-
 }
 
 main.main .main-post h1 {
     font-size: 65px;
     letter-spacing: normal;
     font-weight: 800;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Big Space";
+    letter-spacing: 5px;
     color: #fff;
     text-transform: capitalize;
+    display: grid;
+    place-self: center;
 }
 
 main.main .main-post h2 {
     font-size: 65px;
     letter-spacing: normal;
     font-weight: 800;
-    font-family:'Courier New', Courier, monospace;
+    font-family: "Big Space";
+    letter-spacing: 5px;
     color: #ffa800;
     text-transform: capitalize;
     padding-bottom: 10px;
@@ -343,11 +355,11 @@ section.container-2 .box-image {
     font-size: 16px;
     font-weight: 700;
     font-family: sans-serif;
-    padding: 10px 10px;
+    padding: 20px 25px;
     border-radius: 10px;
-    background-color: #ffa500;
+    background-color: #e52b50;
     color: #fff;
-    border: 1px solid #a9bad1;
+    border: 5px solid #a9bad1;
 }
 
 .box .box-button button:hover {
@@ -359,7 +371,7 @@ section.container-2 .box-image {
 .box .box-form input {
     padding: 20px 10px;
     border: none;
-    border-bottom: 10px solid #ffa500;
+    border-bottom: 10px solid #e52b50;
     width: 80%;
     outline: none;
 }
@@ -439,7 +451,8 @@ section.container-3 .box-2 .text-box-1 h3 {
     font-size: 28px;
     font-weight: 700;
     letter-spacing: normal;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
+    letter-spacing: 5px;
     color: #ffa800;
     display: grid;
     place-self: center;
@@ -463,8 +476,17 @@ section.container-3 .box-2 .text-box-1 button {
     border-radius: 20px;
     display: grid;
     place-self: center;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
+section.container-3 .box-2 .text-box-1 button:hover {
+    background-color: #b1b8c2;
+    color: #000;
+    transition: 1s;
+}
 
 section.container-4 {
     height: 120vh;
@@ -472,7 +494,7 @@ section.container-4 {
     display: grid;
     grid-template-rows: 0.1fr 0.9fr;
     grid-gap: 30px;
-    background-image: url(../images/main/SL_042620_30310_10.jpg);
+    background-image: url(../images/main/testimonial-bg-fullwidth.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -520,7 +542,7 @@ section.container-4 .text-box-2 h4 {
     font-size: 36px;
     font-weight: 800;
     letter-spacing: normal;
-    font-family: sans-serif;
+    font-family: "icofont";
     color: #ffa800;
 }
 
@@ -534,7 +556,7 @@ section.container-4 .text-box-2 p {
 section.container-4 .card h5 {
     font-size: 22px;
     font-weight: 700;
-    font-family: sans-serif;
+    font-family: "icofont";
 }
 
 section.container-4 .card p {
@@ -560,6 +582,7 @@ section.container-4 .card button {
     cursor: pointer;
     border-radius: 20px;
     margin-bottom: 20px;
+    border: 5px solid #b1b8c2;
 }
 
 section.container-5 {
@@ -607,6 +630,13 @@ section.container-5 .header-wrapper button {
     border: none;
     cursor: pointer;
     border-radius: 10px;
+    border: 5px solid #b1b8c2;
+}
+
+section.container-5 .header-wrapper button:hover {
+    background-color: #b1b8c2;
+    color: #000;
+    transition: 1s;
 }
 
 
@@ -616,7 +646,7 @@ section.container-6 {
     display: grid;
     grid-template-rows: 0.1fr 0.9fr;
     grid-gap: 40px;
-    background-image: url(../images/main/SL_042620_30310_10.jpg);
+    background-image: url(../images/main/testimonial-bg-fullwidth.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -683,6 +713,7 @@ section.container-6 .cards-2 .card-2 p {
     place-self: center;
     padding: 0 15px;
     width: 43ch;
+    font-family: sans-serif;
 }
 
 section.container-6 .text-box-3 {
@@ -696,7 +727,7 @@ section.container-6 .text-box-3 h4 {
     font-size: 36px;
     font-weight: 800;
     letter-spacing: normal;
-    font-family: sans-serif;
+    font-family: "icofont";
     color: #ffa800;
 }
 
@@ -704,13 +735,14 @@ section.container-6 .text-box-3 p {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: normal;
-    font-family: sans-serif;
+    font-family: sans-serif
 }
 
 section.container-6 .card-2 h5 {
     font-size: 22px;
     font-weight: 700;
-    font-family: sans-serif;
+    font-family: "icofont";
+    color: #fff;
 }
 
 section.container-6 .card-2 p {
