@@ -529,10 +529,10 @@ section.container-4 .cards .card img{
     height: 250px;
     width: 100%;
     border-radius: 20px;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 section.container-4 .text-box-2 {
